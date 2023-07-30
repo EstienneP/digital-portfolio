@@ -16,9 +16,9 @@ function App() {
   return (
       <Routes>
         <Route path="digital-portfolio" element={ <Home /> } />
-        <Route path="music" element={ <Music /> } />
-        <Route path="resume" element={ <Resume /> } />
-        <Route path="design" element={ <Design /> } />
+        <Route path="digital-portfolio/music" element={ <Music /> } />
+        <Route path="digital-portfolio/resume" element={ <Resume /> } />
+        <Route path="digital-portfolio/design" element={ <Design /> } />
       </Routes>
   );
 }
