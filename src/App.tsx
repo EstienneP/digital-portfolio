@@ -15,7 +15,7 @@ import Resume from "./components/resume/Resume";
 function App() {
   return (
       <Routes>
-        <Route path="/" element={ <Home /> } />
+        <Route path="digital-portfolio" element={ <Home /> } />
         <Route path="music" element={ <Music /> } />
         <Route path="resume" element={ <Resume /> } />
         <Route path="design" element={ <Design /> } />
