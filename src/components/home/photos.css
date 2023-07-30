@@ -1,0 +1,11 @@
+.hover01 {
+	overflow: hidden !important;
+}
+
+.hover01 img {
+	transition: transform .3s;
+}
+
+.hover01:hover img {
+	transform: scale(1.3);
+}
