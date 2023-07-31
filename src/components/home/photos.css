@@ -9,3 +9,17 @@
 .hover01:hover img {
 	transform: scale(1.3);
 }
+
+.elementToFadeInAndOut {
+    -webkit-animation: fadeinout 3s linear forwards infinite;
+    animation: fadeinout 3s linear forwards infinite;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}

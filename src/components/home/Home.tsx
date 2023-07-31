@@ -22,16 +22,16 @@ const Home = () => {
     const itemData = [
         { img: `${process.env.PUBLIC_URL}/home/bush.jpg`, title: 'Bush' },
         { img: `${process.env.PUBLIC_URL}/home/office.jpeg`, title: 'Office' },
-        { img: `${process.env.PUBLIC_URL}/home/yacht.jpg`, title: 'Yacht' },
-        { img: `${process.env.PUBLIC_URL}/home/park.jpg`, title: 'Park' },
-        { img: `${process.env.PUBLIC_URL}/home/mountain.jpg`, title: 'Mountain' },
-        { img: `${process.env.PUBLIC_URL}/home/skate.jpg`, title: 'Skate' },
+        // { img: `${process.env.PUBLIC_URL}/home/skate.png`, title: 'Skate' },
+        // { img: `${process.env.PUBLIC_URL}/home/park.jpg`, title: 'Park' },
+        // { img: `${process.env.PUBLIC_URL}/home/mountain.jpg`, title: 'Mountain' },
+        // { img: `${process.env.PUBLIC_URL}/home/skate.jpg`, title: 'Skate' },
       ];
 
     /**
      * useEffect
      * Change the rendered character
-     * attribute every 2 seconds
+     * attribute every 3 seconds
      */
     useEffect(() => {
         const interval = setInterval(() => {
@@ -41,7 +41,7 @@ const Home = () => {
             // then set the new attribute
             let filteredAttributes = attributes.filter(x => x !== singleAttribute);
             setSingleAttribute(attributes[Math.floor(Math.random() * filteredAttributes.length)]);
-        }, 2000);
+        }, 3000);
         
         return () => {
             clearInterval(interval);
@@ -54,7 +54,9 @@ const Home = () => {
                 <Grid item xs={5}>
                     <div style={{padding: 10}}>
                         <Typography variant="h3">
-                            <i>{singleAttribute}</i>
+                            <div className="elementToFadeInAndOut">
+                                {singleAttribute}
+                            </div>
                         </Typography>
                         <Divider />
                         <br />
@@ -81,12 +83,12 @@ const Home = () => {
                 </Grid>
                 <Grid item xs={7}>
                     <div style={{padding: 10}}>
-                        <ImageList cols={3}>
+                        <ImageList cols={2}>
                             {itemData.map((item) => (
                                 <ImageListItem key={item.img} className="hover01">
                                     <img
-                                        src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                        srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                        src={`${item.img}`}
+                                        srcSet={`${item.img}`}
                                         alt={item.title}
                                         loading="lazy"
                                     />
