@@ -13,16 +13,16 @@ const NavBar = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography sx={{ flexGrow: 1 }}>Estienne Prior</Typography>
-            <Link to="/digital-portfolio">
+            <Link to="">
               <Button sx={{color: '#ffffff'}}><Typography>Home</Typography></Button>
             </Link>
-            <Link to="/digital-portfolio/music">
+            <Link to="music">
               <Button sx={{color: '#ffffff'}}><Typography>Music</Typography></Button>
             </Link>
-            <Link to="/digital-portfolio/design">
+            <Link to="design">
               <Button sx={{color: '#ffffff'}}><Typography>Design</Typography></Button>
             </Link>
-            <Link to="/digital-portfolio/resume">
+            <Link to="resume">
               <Button sx={{color: '#ffffff'}}><Typography>Resume</Typography></Button>
             </Link>
         </Toolbar>
