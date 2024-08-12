@@ -1,8 +1,6 @@
 // IMPORTS
 import { Dispatch, SetStateAction } from "react";
 import { ImageList, ImageListItem } from "@mui/material";
-// CSS
-import '../../home/photos.css';
 
 interface DesignProps {
     setDialogOpen: Dispatch<SetStateAction<boolean>>;

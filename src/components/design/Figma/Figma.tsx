@@ -1,8 +1,6 @@
 // IMPORTS
 import { Dispatch, SetStateAction } from "react";
 import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from "@mui/material";
-// CSS
-import '../../home/photos.css';
 
 interface DesignProps {
     setDialogOpen: Dispatch<SetStateAction<boolean>>;

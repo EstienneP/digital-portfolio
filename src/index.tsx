@@ -1,10 +1,11 @@
 // IMPORTS
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from "react-router-dom";
-import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+import { createTheme, CssBaseline, Grid, ThemeProvider, Typography } from "@mui/material";
 // COMPONENTS
 import App from "./App";
 import NavBar from "./components/main/NavBar";
+import Footer from './components/main/Footer';
 //STYLES
 import './App.css';
 
@@ -22,6 +23,10 @@ const theme = createTheme({
     }
   },
   typography: {
+    h1: {
+      fontSize: 48,
+      fontWeight: 100,
+    },
     h2: {
       fontWeight: 100,
     },
@@ -39,8 +44,12 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
         <CssBaseline />
         <BrowserRouter>
-            <NavBar />
-            <App />
+          <div className="page-wrapper">
+              <Typography variant="h1">ESTIENNE PRIOR</Typography>
+              <NavBar />
+              <App />
+              <Footer />
+          </div>
         </BrowserRouter>
     </ThemeProvider>,
     document.getElementById("root")

@@ -11,7 +11,7 @@ import '../../App.css'
 const NavBar = () => {
   return (
     <>
-      <Toolbar>
+      <Toolbar className="navbar">
         <Typography variant="body1">
           <Link className="menu-link" to="digital-portfolio/music">MUSIC</Link>
         </Typography>
