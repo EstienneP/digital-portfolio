@@ -3,11 +3,19 @@ body {
 }
 
 .estienne {
-  color: #2c2c2c;
   font-weight: bold;
+}
+
+.link, .link:visited {
+  color: #2c2c2c;
   text-decoration: none !important;
 }
 
-.estienne:hover {
+.link:hover {
   color: #00476b;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  padding: 5%;
 }
