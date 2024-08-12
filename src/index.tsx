@@ -11,18 +11,12 @@ import NavBar from "./components/main/NavBar";
  * The color theming for the site
  */
 const theme = createTheme({
-    palette: {
-      background: {
-        default: '#fffdfc'
-      },
-      primary: {
-        main: '#153645'
-      },
-      secondary: {
-        main: '#e02a2f'
-      }
+  palette: {
+    text: {
+      primary: '#2c2c2c'
     }
-  });
+  }
+});
 
 ReactDOM.render(
     <ThemeProvider theme={theme}>

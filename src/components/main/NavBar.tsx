@@ -1,5 +1,27 @@
 import { AppBar, Button, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import '../../App.css'
+
+const navButtons = {
+  basic: {
+    backgroundColor: 'transparent',
+    color: '#2c2c2c',
+    paddingRight: '10px',
+    textTransform: 'capitalize',
+    '&:hover': {
+      backgroundColor: 'transparent',
+      color: '#00476b'
+    }
+  },
+
+  cta: {
+    border: 'solid 1px #2c2c2c',
+    '&:hover': {
+      backgroundColor: 'transparent',
+      color: '#00476b'
+    }
+  }
+}
 
 /**
  * NavBar
@@ -10,21 +32,18 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="sticky" sx={{backgroundColor: '#fff'}}>
         <Toolbar>
-          <Typography sx={{ flexGrow: 1 }}>Estienne Prior</Typography>
-            <Link to="">
-              <Button sx={{color: '#ffffff'}}><Typography>Home</Typography></Button>
-            </Link>
-            <Link to="music">
-              <Button sx={{color: '#ffffff'}}><Typography>Music</Typography></Button>
-            </Link>
-            <Link to="design">
-              <Button sx={{color: '#ffffff'}}><Typography>Design</Typography></Button>
-            </Link>
-            <Link to="resume">
-              <Button sx={{color: '#ffffff'}}><Typography>Resume</Typography></Button>
-            </Link>
+          <Typography sx={{ flexGrow: 1 }}><Link to="digital-portfolio" className="estienne link">Estienne Prior</Link></Typography>
+          <Link to="digital-portfolio/music">
+            <Button sx={navButtons.basic}><Typography>Music</Typography></Button>
+          </Link>
+          <Link to="digital-portfolio/design">
+            <Button sx={navButtons.basic}><Typography>Design</Typography></Button>
+          </Link>
+          <Link to="digital-portfolio/contact">
+            <Button sx={[navButtons.basic, navButtons.cta]}><Typography>Contact</Typography></Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </>
