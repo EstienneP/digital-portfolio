@@ -34,19 +34,16 @@ const NavBar = () => {
     <>
       <AppBar position="sticky" sx={{backgroundColor: '#fff'}}>
         <Toolbar>
-          <Typography sx={{ flexGrow: 1 }}><Link to="digital-portfolio" className="estienne">Estienne Prior</Link></Typography>
+          <Typography sx={{ flexGrow: 1 }}><Link to="digital-portfolio" className="estienne link">Estienne Prior</Link></Typography>
           <Link to="digital-portfolio/music">
             <Button sx={navButtons.basic}><Typography>Music</Typography></Button>
           </Link>
           <Link to="digital-portfolio/design">
             <Button sx={navButtons.basic}><Typography>Design</Typography></Button>
           </Link>
-          <Link to="digital-portfolio/resume">
-            <Button sx={navButtons.basic}><Typography>Resume</Typography></Button>
-          </Link>
-          {/* <Link to="contact">
+          <Link to="digital-portfolio/contact">
             <Button sx={[navButtons.basic, navButtons.cta]}><Typography>Contact</Typography></Button>
-          </Link> */}
+          </Link>
         </Toolbar>
       </AppBar>
     </>
