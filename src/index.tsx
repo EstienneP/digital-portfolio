@@ -5,16 +5,33 @@ import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 // COMPONENTS
 import App from "./App";
 import NavBar from "./components/main/NavBar";
+//STYLES
+import './App.css';
 
 /**
  * theme
- * The color theming for the site
+ * The theming for the site
  */
 const theme = createTheme({
   palette: {
+    background: {
+      default: '#181818'
+    },
     text: {
-      primary: '#2c2c2c'
+      primary: '#fff'
     }
+  },
+  typography: {
+    h2: {
+      fontWeight: 100,
+    },
+    body1: {
+      fontWeight: 100,
+    },
+    fontFamily: [
+      '"Nunito Sans"',
+      'sans-serif',
+    ].join(','),
   }
 });
 
