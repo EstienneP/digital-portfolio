@@ -1,27 +1,6 @@
-import { AppBar, Button, Toolbar, Typography } from "@mui/material";
+import { Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import '../../App.css'
-
-const navButtons = {
-  basic: {
-    backgroundColor: 'transparent',
-    color: '#2c2c2c',
-    paddingRight: '10px',
-    textTransform: 'capitalize',
-    '&:hover': {
-      backgroundColor: 'transparent',
-      color: '#00476b'
-    }
-  },
-
-  cta: {
-    border: 'solid 1px #2c2c2c',
-    '&:hover': {
-      backgroundColor: 'transparent',
-      color: '#00476b'
-    }
-  }
-}
 
 /**
  * NavBar
@@ -32,20 +11,14 @@ const navButtons = {
 const NavBar = () => {
   return (
     <>
-      <AppBar position="sticky" sx={{backgroundColor: '#fff'}}>
-        <Toolbar>
-          <Typography sx={{ flexGrow: 1 }}><Link to="digital-portfolio" className="estienne link">Estienne Prior</Link></Typography>
-          <Link to="digital-portfolio/music">
-            <Button sx={navButtons.basic}><Typography>Music</Typography></Button>
-          </Link>
-          <Link to="digital-portfolio/design">
-            <Button sx={navButtons.basic}><Typography>Design</Typography></Button>
-          </Link>
-          <Link to="digital-portfolio/contact">
-            <Button sx={[navButtons.basic, navButtons.cta]}><Typography>Contact</Typography></Button>
-          </Link>
-        </Toolbar>
-      </AppBar>
+      <Toolbar>
+        <Typography variant="body1">
+          <Link className="menu-link" to="digital-portfolio/music">MUSIC</Link>
+        </Typography>
+        <Typography variant="body1">
+          <Link className="menu-link" to="digital-portfolio/design">DESIGN</Link>
+        </Typography>
+      </Toolbar>
     </>
   );
 }
