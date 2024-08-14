@@ -11,11 +11,15 @@
   margin: 0px 5px;
 }
 
-.navbar {
+.navbar-contact, .navbar-menu {
   min-height: 0 !important;
   padding: 0 !important;
 }
 
-.footer {
-  border-top: solid 1px #fff;
+.navbar-contact {
+  border-bottom: solid 1px #fff;
+}
+
+.navbar-menu {
+  margin-bottom: 40px;
 }

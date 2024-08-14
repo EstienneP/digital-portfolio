@@ -11,12 +11,12 @@ import '../../App.css'
 const NavBar = () => {
   return (
     <>
-      <Toolbar className="navbar">
+      <Toolbar className="navbar-menu">
         <Typography variant="body1">
-          <Link className="menu-link" to="digital-portfolio/music">MUSIC</Link>
+          <Link className="menu-link" to="digital-portfolio/">ABOUT</Link>
         </Typography>
         <Typography variant="body1">
-          <Link className="menu-link" to="digital-portfolio/design">DESIGN</Link>
+          <Link className="menu-link" to="digital-portfolio/music">MUSIC</Link>
         </Typography>
       </Toolbar>
     </>
