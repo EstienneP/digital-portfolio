@@ -8,6 +8,7 @@ import NavBar from "./components/main/NavBar";
 import NavBarContact from './components/main/NavBarContact';
 //STYLES
 import './App.css';
+import ThemeBar from './components/main/ThemeBar';
 
 /**
  * theme
@@ -56,6 +57,7 @@ ReactDOM.render(
                   
                 </Grid>
               </Grid>
+              <ThemeBar />
           </div>
         </BrowserRouter>
     </ThemeProvider>,
