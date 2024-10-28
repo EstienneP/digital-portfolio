@@ -9,8 +9,11 @@ import { Divider, Grid, Paper, Typography } from "@mui/material";
 const Music = () => {
     return (
         <>
-            <Grid container>
+            <Grid container className="content-container">
                 <Grid item xs={12}>
+                    <Typography variant="body1">
+                        When free of obligations, I make music. I struggle to stick to a specific genre or sound - I just make what I like. 
+                    </Typography>
                     <iframe 
                         title="artist"
                         src="https://open.spotify.com/embed/artist/0nu6PXv6dmifKrKOXB6aEY?utm_source=generator" 
