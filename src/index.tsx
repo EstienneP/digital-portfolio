@@ -1,6 +1,6 @@
 // IMPORTS
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import { createTheme, CssBaseline, Grid, ThemeProvider, Typography } from "@mui/material";
 // COMPONENTS
 import App from "./App";
@@ -51,7 +51,7 @@ ReactDOM.render(
           <div className="page-wrapper">
               <Grid container>
                 <Grid item xs={6}>
-                  <Typography variant="h1">ESTIENNE PRIOR</Typography>
+                  <Typography variant="h1"><Link className="menu-link" to="digital-portfolio">ESTIENNE PRIOR</Link></Typography>
                   <NavBarContact />
                   <NavBar />
                   <App />

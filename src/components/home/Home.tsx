@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 /**
  * Home
@@ -9,11 +9,11 @@ import { Typography } from "@mui/material";
 const Home = () => {
 
     return (
-        <>
-            <Typography variant="body1">
-                I am who I am seen to be.
-            </Typography>
-        </>
+        <Grid container className="content-container">
+            <Grid item xs={12}>
+                <Typography variant="body1">Developer and musician, est. 1999.</Typography>
+            </Grid>
+        </Grid>
     );
 }
 
