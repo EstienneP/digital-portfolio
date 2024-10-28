@@ -6,9 +6,12 @@ import { createTheme, CssBaseline, Grid, ThemeProvider, Typography } from "@mui/
 import App from "./App";
 import NavBar from "./components/main/NavBar";
 import NavBarContact from './components/main/NavBarContact';
+import ThemeBar from './components/main/ThemeBar';
+import ThemeContent from './components/main/ThemeContent';
 //STYLES
 import './App.css';
-import ThemeBar from './components/main/ThemeBar';
+import './styling/Theme.css'
+
 
 /**
  * theme
@@ -46,18 +49,18 @@ ReactDOM.render(
         <CssBaseline />
         <BrowserRouter>
           <div className="page-wrapper">
-              <Typography variant="h1">ESTIENNE PRIOR</Typography>
-              <NavBarContact />
-              <NavBar />
               <Grid container>
                 <Grid item xs={6}>
+                  <Typography variant="h1">ESTIENNE PRIOR</Typography>
+                  <NavBarContact />
+                  <NavBar />
                   <App />
+                  {/* <ThemeBar /> */}
                 </Grid>
                 <Grid item xs={6}>
-                  
+                  <ThemeContent />
                 </Grid>
               </Grid>
-              <ThemeBar />
           </div>
         </BrowserRouter>
     </ThemeProvider>,

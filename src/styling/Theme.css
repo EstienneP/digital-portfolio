@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+  --bg: #181818;
+  --textColor: #fff;
+  --themeImage: url('../../public/theme/dont-touch-me.png');
+}
+
+body[data-theme="dtm"] {
+  --bg: #181818;
+  --textColor: #fff;
+  --themeImage: url('../../public/theme/dont-touch-me.png');
+}
+
+body[data-theme="taquito"] {
+  --bg: #fff;
+  --textColor: #181818;
+  --themeImage: url('../../public/theme/taquito.png');
+}
+
+body[data-theme="medusa"] {
+  --bg: url("https://images.unsplash.com/photo-1590421960980-153d3cd2f78c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  --textColor: #fff;
+  --themeImage: "";
+}
+
+body {
+  background: var(--bg) !important;
+  color: var(--textColor) !important;
+}
+
+.menu-link, .menu-link:visited {
+  color: var(--textColor);
+}
+
+.navbar-contact {
+  border-bottom: solid 1px var(--textColor);
+}
+
+.theme-button {
+  background-color: #ffffff00 !important;
+  box-shadow: none !important;
+  color: var(--textColor) !important;
+  font-size: 16px !important;
+  font-weight: 100 !important;
+  padding: 0px !important;
+}
+
+.theme-img-container {
+    border: 1px solid var(--textColor);
+    display: flex;
+    justify-content: center;
+}
+
+.theme-image {
+    content: var(--themeImage);
+    height: auto;
+    max-height: 350px;
+    max-width: 350px;
+    width: 100%;
+}
