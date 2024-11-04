@@ -18,9 +18,13 @@ ul {
   padding-top: 5%;
 }
 
+.heading-custom {
+  margin-left: -4px !important;
+}
+
 .menu-link, .menu-link:visited {
   text-decoration: none !important;
-  margin: 0px 5px !important;
+  margin-right: 5px !important;
 }
 
 .navbar-contact, .navbar-menu {
@@ -31,4 +35,8 @@ ul {
 .page-wrapper {
   min-height: 100vh;
   padding: 5%;
+}
+
+.spotify-player {
+  padding-top: 5%;
 }

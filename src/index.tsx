@@ -51,7 +51,7 @@ ReactDOM.render(
           <div className="page-wrapper">
               <Grid container>
                 <Grid item xs={6}>
-                  <Typography variant="h1"><Link className="menu-link" to="digital-portfolio">ESTIENNE PRIOR</Link></Typography>
+                  <Typography className="heading-custom" variant="h1"><Link className="menu-link" to="digital-portfolio">ESTIENNE PRIOR</Link></Typography>
                   <NavBarContact />
                   <NavBar />
                   <App />

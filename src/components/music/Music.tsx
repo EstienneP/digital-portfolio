@@ -15,6 +15,7 @@ const Music = () => {
                         Here's a few of my most popular songs. I struggle to stick to a specific genre or sound - I just make what I like. 
                     </Typography>
                     <iframe 
+                        className="spotify-player"
                         title="artist"
                         src="https://open.spotify.com/embed/artist/0nu6PXv6dmifKrKOXB6aEY?utm_source=generator" 
                         width="100%" 
