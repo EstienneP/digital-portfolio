@@ -1,4 +1,19 @@
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+ul {
+  margin: 0;
+}
+
+.content {
+  padding-bottom: 5%;
+}
+
 .content-container {
+  max-height: 250px;
+  overflow-y: scroll;
   padding-right: 5%;
   padding-top: 5%;
 }

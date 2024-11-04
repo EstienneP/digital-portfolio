@@ -1,4 +1,4 @@
-import { Divider, Grid, Paper, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 /**
  * Music
@@ -11,8 +11,8 @@ const Music = () => {
         <>
             <Grid container className="content-container">
                 <Grid item xs={12}>
-                    <Typography variant="body1">
-                        When free of obligations, I make music. I struggle to stick to a specific genre or sound - I just make what I like. 
+                    <Typography className="content" variant="body1">
+                        Here's a few of my most popular songs. I struggle to stick to a specific genre or sound - I just make what I like. 
                     </Typography>
                     <iframe 
                         title="artist"
