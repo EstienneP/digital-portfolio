@@ -8,6 +8,7 @@ import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
+import Experience from "./components/experience/Experience";
 
 /**
  * App
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="digital-portfolio" element={ <Home /> } />
         <Route path="digital-portfolio/about" element={ <About /> } />
+        <Route path="digital-portfolio/experience" element={ <Experience /> } />
         <Route path="digital-portfolio/music" element={ <Music /> } />
         <Route path="digital-portfolio/skills" element={ <Skills /> } />
         <Route path="digital-portfolio/resume" element={ <Resume /> } />

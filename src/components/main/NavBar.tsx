@@ -16,6 +16,9 @@ const NavBar = () => {
           <Link className="menu-link" to="digital-portfolio/about">ABOUT</Link>
         </Typography>
         <Typography variant="body1">
+          <Link className="menu-link" to="digital-portfolio/experience">EXPERIENCE</Link>
+        </Typography>
+        <Typography variant="body1">
           <Link className="menu-link" to="digital-portfolio/skills">SKILLS</Link>
         </Typography>
         <Typography variant="body1">

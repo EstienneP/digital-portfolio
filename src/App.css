@@ -1,8 +1,19 @@
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 ul {
-  margin-top: 0;
+  margin: 0;
+}
+
+.content {
+  padding-bottom: 5%;
 }
 
 .content-container {
+  max-height: 250px;
+  overflow-y: scroll;
   padding-right: 5%;
   padding-top: 5%;
 }
@@ -21,11 +32,19 @@ ul {
   padding: 0 !important;
 }
 
+.navbar-container {
+  background-color: var(--bg);
+  position: sticky;
+  top: 0;
+}
+
 .page-wrapper {
   min-height: 100vh;
   padding: 5%;
 }
 
-.spotify-player {
-  padding-top: 5%;
+@media screen and (max-width: 480px) {
+  .content-container {
+    max-height: 100vh;
+  }
 }

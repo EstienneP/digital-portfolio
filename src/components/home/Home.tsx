@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <Grid container className="content-container">
-            <Grid item xs={12}>
+            <Grid item className="content" xs={12}>
                 <Typography variant="body1">Developer and musician, est. 1999.</Typography>
             </Grid>
         </Grid>
