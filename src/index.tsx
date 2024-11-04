@@ -27,6 +27,9 @@ const theme = createTheme({
   typography: {
     h1: {
       fontSize: 48,
+      "@media (max-width:480px)": {
+        fontSize: '36px'
+      },
       fontWeight: 100,
     },
     h2: {
@@ -35,7 +38,7 @@ const theme = createTheme({
     body1: {
       fontSize: '1rem',
       "@media (max-width:480px)": {
-        fontSize: '1.5rem'
+        fontSize: '1.2rem'
       },
       fontWeight: 100,
     },
@@ -61,7 +64,7 @@ ReactDOM.render(
                   <App />
                   {/* <ThemeBar /> */}
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item className="theme-content-container" xs={12} md={6}>
                   <ThemeContent />
                 </Grid>
               </Grid>
