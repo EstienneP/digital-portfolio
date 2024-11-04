@@ -1,21 +1,52 @@
-body {
-  background-color: #f0f0f0;
+/* make scrollbar transparent */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; 
 }
 
-.estienne {
-  font-weight: bold;
+ul {
+  margin: 0;
 }
 
-.link, .link:visited {
-  color: #2c2c2c;
+.content {
+  padding-bottom: 5%;
+}
+
+.content-container {
+  max-height: 250px;
+  overflow-y: scroll;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.heading-custom {
+  margin-left: -4px !important;
+}
+
+.menu-link, .menu-link:visited {
   text-decoration: none !important;
+  margin-right: 5px !important;
 }
 
-.link:hover {
-  color: #00476b;
+.navbar-contact, .navbar-menu {
+  min-height: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar-container {
+  background-color: var(--bg);
+  position: sticky;
+  top: 0;
 }
 
 .page-wrapper {
   min-height: 100vh;
   padding: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .content-container {
+    max-height: 100vh;
+  }
 }

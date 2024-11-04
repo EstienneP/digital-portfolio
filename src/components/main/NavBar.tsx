@@ -1,27 +1,8 @@
-import { AppBar, Button, Toolbar, Typography } from "@mui/material";
+// IMPORTS
+import { Grid, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+// STYLING
 import '../../App.css'
-
-const navButtons = {
-  basic: {
-    backgroundColor: 'transparent',
-    color: '#2c2c2c',
-    paddingRight: '10px',
-    textTransform: 'capitalize',
-    '&:hover': {
-      backgroundColor: 'transparent',
-      color: '#00476b'
-    }
-  },
-
-  cta: {
-    border: 'solid 1px #2c2c2c',
-    '&:hover': {
-      backgroundColor: 'transparent',
-      color: '#00476b'
-    }
-  }
-}
 
 /**
  * NavBar
@@ -32,20 +13,22 @@ const navButtons = {
 const NavBar = () => {
   return (
     <>
-      <AppBar position="sticky" sx={{backgroundColor: '#fff'}}>
-        <Toolbar>
-          <Typography sx={{ flexGrow: 1 }}><Link to="digital-portfolio" className="estienne link">Estienne Prior</Link></Typography>
-          <Link to="digital-portfolio/music">
-            <Button sx={navButtons.basic}><Typography>Music</Typography></Button>
-          </Link>
-          <Link to="digital-portfolio/design">
-            <Button sx={navButtons.basic}><Typography>Design</Typography></Button>
-          </Link>
-          <Link to="digital-portfolio/contact">
-            <Button sx={[navButtons.basic, navButtons.cta]}><Typography>Contact</Typography></Button>
-          </Link>
+      <Grid container>
+        <Toolbar className="navbar-menu">
+          <Typography variant="body1">
+            <Link className="menu-link" to="digital-portfolio/about">ABOUT</Link>
+          </Typography>
+          <Typography variant="body1">
+            <Link className="menu-link" to="digital-portfolio/experience">EXPERIENCE</Link>
+          </Typography>
+          <Typography variant="body1">
+            <Link className="menu-link" to="digital-portfolio/skills">SKILLS</Link>
+          </Typography>
+          <Typography variant="body1">
+            <Link className="menu-link" to="digital-portfolio/music">MUSIC</Link>
+          </Typography>
         </Toolbar>
-      </AppBar>
+      </Grid>
     </>
   );
 }
