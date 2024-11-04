@@ -1,5 +1,12 @@
+// IMPORTS
 import { Grid, Typography } from "@mui/material";
 
+/**
+ * About
+ * A page to describe myself
+ * @author Estienne
+ * @returns {JSX} the about page
+ */
 const About = () => {
     return (
         <Grid container className="content-container">

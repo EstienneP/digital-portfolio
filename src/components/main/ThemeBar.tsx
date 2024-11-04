@@ -1,6 +1,12 @@
 // IMPORTS
 import { Button, Toolbar } from "@mui/material";
 
+/**
+ * ThemeBar
+ * The menu bar of all the different themes for the site
+ * @author Estienne
+ * @returns {JSX} the theme bar
+ */
 const ThemeBar = () => {
     return (
         <>

@@ -1,5 +1,12 @@
+// IMPORTS
 import { Grid, Typography } from "@mui/material";
 
+/**
+ * Skills
+ * A page to outline my development skills
+ * @author Estienne
+ * @returns {JSX} the skills page
+ */
 const Skills = () => {
     return(
         <Grid container className="content-container">

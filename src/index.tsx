@@ -6,12 +6,10 @@ import { createTheme, CssBaseline, Grid, ThemeProvider, Typography } from "@mui/
 import App from "./App";
 import NavBar from "./components/main/NavBar";
 import NavBarContact from './components/main/NavBarContact';
-import ThemeBar from './components/main/ThemeBar';
 import ThemeContent from './components/main/ThemeContent';
 //STYLES
 import './App.css';
 import './styling/Theme.css'
-
 
 /**
  * theme

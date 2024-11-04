@@ -33,8 +33,8 @@ body {
   color: var(--textColor);
 }
 
-.navbar-contact {
-  border-bottom: solid 1px var(--textColor);
+.navbar-menu {
+  border-top: solid 1px var(--textColor);
 }
 
 .theme-button {

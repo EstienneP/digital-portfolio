@@ -1,6 +1,13 @@
+// IMPORTS
 import { Grid, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
+/**
+ * NavbarContact
+ * The navbar containing all contact links
+ * @author Estienne
+ * @returns {JSX} the contact navbar
+ */
 const NavbarContact = () => {
   return (
     <>
