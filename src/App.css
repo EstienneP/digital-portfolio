@@ -32,11 +32,19 @@ ul {
   padding: 0 !important;
 }
 
+.navbar-container {
+  background-color: var(--bg);
+  position: sticky;
+  top: 0;
+}
+
 .page-wrapper {
   min-height: 100vh;
   padding: 5%;
 }
 
-.spotify-player {
-  padding-top: 5%;
+@media screen and (max-width: 480px) {
+  .content-container {
+    max-height: 100vh;
+  }
 }

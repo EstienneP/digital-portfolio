@@ -12,7 +12,7 @@ const Music = () => {
             <Grid container className="content-container">
                 <Grid item xs={12}>
                     <Typography className="content" variant="body1">
-                        Here's a few of my most popular songs. I struggle to stick to a specific genre or sound - I just make what I like. 
+                        Here are a few of my trending songs. Thank you for listening ♥. 
                     </Typography>
                     <iframe 
                         className="spotify-player"
@@ -22,7 +22,7 @@ const Music = () => {
                         height="100%" 
                         frameBorder="0" 
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                        loading="lazy">
+                        loading="eager">
                     </iframe>
                 </Grid>
                 {/* <Grid item xs={12}>

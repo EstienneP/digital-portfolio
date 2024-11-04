@@ -35,6 +35,10 @@ const theme = createTheme({
       fontWeight: 100,
     },
     body1: {
+      fontSize: '1rem',
+      "@media (max-width:480px)": {
+        fontSize: '1.5rem'
+      },
       fontWeight: 100,
     },
     fontFamily: [
@@ -50,14 +54,16 @@ ReactDOM.render(
         <BrowserRouter>
           <div className="page-wrapper">
               <Grid container>
-                <Grid item xs={6}>
-                  <Typography className="heading-custom" variant="h1"><Link className="menu-link" to="digital-portfolio">ESTIENNE PRIOR</Link></Typography>
-                  <NavBarContact />
-                  <NavBar />
+                <Grid item xs={12} md={6}>
+                  <div className="navbar-container">
+                    <Typography className="heading-custom" variant="h1"><Link className="menu-link" to="digital-portfolio">ESTIENNE PRIOR</Link></Typography>
+                    <NavBarContact />
+                    <NavBar />
+                  </div>
                   <App />
                   {/* <ThemeBar /> */}
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                   <ThemeContent />
                 </Grid>
               </Grid>
