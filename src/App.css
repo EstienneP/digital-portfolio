@@ -8,12 +8,16 @@ ul {
   margin: 0;
 }
 
+.active {
+  font-weight: bold;
+}
+
 .content {
   padding-bottom: 5%;
 }
 
 .content-container {
-  max-height: 250px;
+  max-height: 50vh;
   overflow-y: scroll;
   padding-right: 5%;
   padding-top: 5%;
@@ -46,7 +50,7 @@ ul {
 
 @media screen and (max-width: 480px) {
   .content-container {
-    overflow: visible;
+    max-height: 80vh;
   }
 
   .theme-content-container {
